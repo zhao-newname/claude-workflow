@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "mode": "single-agent",
+  "skills": {
+    "backend-dev-guidelines": {
+      "source": "universal",
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high"
+    }
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/skill-activation-prompt.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/post-tool-use-tracker.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

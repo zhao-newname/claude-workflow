@@ -1,0 +1,30 @@
+# 当前活跃任务
+
+**任务**: {{TASK_NAME}}
+**路径**: dev/active/{{TASK_NAME}}/
+**状态**: {{STATUS}}
+**完成度**: {{PROGRESS}}%
+**最后更新**: {{TIMESTAMP}}
+
+---
+
+## 📋 恢复指南
+
+### 1. 读取上下文文件
+```
+dev/active/{{TASK_NAME}}/{{TASK_NAME}}-context.md
+```
+
+### 2. 读取任务清单
+```
+dev/active/{{TASK_NAME}}/{{TASK_NAME}}-tasks.md
+```
+
+### 3. 当前状态摘要
+{{SUMMARY}}
+
+---
+
+## 🎯 快速恢复
+
+{{QUICK_RESUME}}

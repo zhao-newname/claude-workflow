@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output/
+test-fixtures/
+test-temp/
+test-output/
+.claude-test/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Installed skills (keep source skills in universal/ and tech-stack/)
+.claude/skills/*/
+!.claude/skills/universal/
+!.claude/skills/tech-stack/
+!.claude/skills/*.md
+!.claude/skills/*.json
+
+# Claude Workflow local files
+.claude/settings.local.json
+.claude/tsc-cache/
+*.backup
+
+# Claude Workflow
+.claude/skills-global

@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "skills": {
+    "pdf": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "medium",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill."
+    },
+    "docx": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "medium",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of \"Word doc\", \"word document\", \".docx\", or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a \"report\", \"memo\", \"letter\", \"template\", or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+      "promptTriggers": {
+        "keywords": [
+          "word document",
+          "docx",
+          "word doc",
+          ".docx",
+          "report",
+          "memo",
+          "letter",
+          "professional document"
+        ],
+        "intentPatterns": [
+          "(create|make|generate|write).*?(word|docx|document|report|memo|letter)",
+          "(edit|modify|update).*?(word|docx).*?document",
+          "(read|extract|analyze).*?docx",
+          "word.*?(document|file)"
+        ]
+      }
+    },
+    "backend-dev-guidelines": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "medium",
+      "description": "Comprehensive backend development guide for Node.js/Express/TypeScript microservices. Use when creating routes, controllers, services, repositories, middleware, or working with Express APIs, Prisma database access, Sentry error tracking, Zod validation, unifiedConfig, dependency injection, or async patterns. Covers layered architecture (routes → controllers → services → repositories), BaseController pattern, error handling, performance monitoring, testing strategies, and migration from legacy patterns.",
+      "promptTriggers": {
+        "keywords": [
+          "backend",
+          "api",
+          "controller",
+          "service",
+          "repository",
+          "express",
+          "prisma",
+          "sentry",
+          "middleware",
+          "route"
+        ],
+        "intentPatterns": [
+          "(create|add|implement).*?(route|endpoint|api|controller|service)",
+          "(backend|server).*?(pattern|architecture|best practice)",
+          "(express|prisma|sentry).*?(setup|config|use)"
+        ]
+      }
+    }
+  }
+}
