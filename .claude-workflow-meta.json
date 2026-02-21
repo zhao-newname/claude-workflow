@@ -1,9 +1,8 @@
 {
   "mode": "single-agent",
   "version": "1.0",
-  "createdAt": "2026-02-11T03:30:28.302Z",
+  "createdAt": "2026-02-16T06:34:38.265Z",
   "projectInfo": {
-    "language": "TypeScript",
-    "packageManager": "npm"
+    "language": "TypeScript"
   }
 }
