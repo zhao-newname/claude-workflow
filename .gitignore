@@ -55,6 +55,7 @@ temp/
 .claude/settings.local.json
 .claude/tsc-cache/
 *.backup
+.claude.backup*/
 
 # Claude Workflow
 .claude/skills-global
