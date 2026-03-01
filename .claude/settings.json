@@ -2,7 +2,25 @@
   "version": "1.0",
   "mode": "single-agent",
   "skills": {
-    "backend-dev-guidelines": {
+    "cw-debug": {
+      "source": "universal",
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high"
+    },
+    "skill-developer": {
+      "source": "universal",
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high"
+    },
+    "skill-fixer": {
+      "source": "universal",
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high"
+    },
+    "code-review": {
       "source": "universal",
       "type": "domain",
       "enforcement": "suggest",
